@@ -19,7 +19,19 @@
                  <div>
                   <i class="fa-solid fa-globe"></i>
                 </div>
-                <div><i class="fa-solid fa-bars"></i></div>
+                <div class="relative" data-controller="dropdown" data-action="click@window->dropdown#closeUnlessDropdown" ><i  class="fa-solid fa-bars" data-action="click->dropdown#toggle"></i>
+                <div class="absolute top-10 right-0 w-60 h-75 bg-gray-200 rounded-lg hidden p-2 flex flex-col" data-dropdown-target="menu">
+                    <%# after help center path will be added like this  help_center_path, %>
+                    <%= link_to "Help center", class:"text-xl text-gray-800"%>
+                    <hr>
+                    <%= link_to "Become a host", class:"text-xl text-gray-800 "%>
+                    <%= link_to "Refer a host", class:"text-xl text-gray-800"%>
+                    <%= link_to "Find a co-honst", class:"text-xl text-gray-800"%>
+                    <%= link_to "Gift Cards", class:"text-xl text-gray-800"%>
+                    <hr>
+                    <%= link_to "Log in or Sign up", class:"text-xl text-gray-800"%>
+                </div>
+                </div>
             </div>
            
         </div>
