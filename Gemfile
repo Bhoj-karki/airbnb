@@ -54,4 +54,4 @@ end
 gem "tailwindcss-rails"
 
 # devise gem file added
-gem "devise", "~> 4.9", ">= 4.9.3"
+gem "devise", "~> 5.0"
